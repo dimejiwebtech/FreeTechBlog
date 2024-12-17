@@ -1,0 +1,167 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreeTech - Free Tech Tips, Gaming & More </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static '/css/main.css' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-background">
+    <div class="container">
+      <a class="navbar-brand" href="#">FreeTech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link link-color" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link link-color" href="all-posts.html">All Posts</a></li>
+          <li class="nav-item"><a class="nav-link link-color" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link link-color" href="#">Contact</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search posts">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <a href="#" class="btn btn-outline-light ms-3">Login</a>
+        <a href="#" class="btn btn-outline-light ms-2">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <!-- Featured Posts Section -->
+    <h2 class="mb-4">Featured Posts</h2>
+    <div class="row mb-5">
+      <!-- Post 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Featured Post 1">
+          <div class="card-body">
+            <h5 class="card-title">10 Best Free Classic Solitaire Download No Ads (2024)</h5>
+            <p class="card-text">A brief description of the featured post content.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Post 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Featured Post 2">
+          <div class="card-body">
+            <h5 class="card-title">Featured Post 2</h5>
+            <p class="card-text">A brief description of the featured post content.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Post 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Featured Post 3">
+          <div class="card-body">
+            <h5 class="card-title">Featured Post 3</h5>
+            <p class="card-text">A brief description of the featured post content.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content and Sidebar -->
+    <div class="row">
+      <!-- Main Content -->
+      <div class="col-md-8">
+        <h2 class="mb-4">Latest Posts</h2>
+        <!-- Latest Post 1 -->
+        <div class="d-flex align-items-start mb-4">
+          <img src="https://via.placeholder.com/120x80" class="me-3 rounded" alt="Latest Post 1">
+          <div>
+            <h5 class="mb-1">
+              <a href="#" class="text-dark text-decoration-none">10 Best Free Classic Solitaire Download No Ads (2024)</a>
+            </h5>
+            <p class="text-muted mb-0">Android | 4 February 2024</p>
+          </div>
+        </div>
+        <!-- Latest Post 2 -->
+        <div class="d-flex align-items-start mb-4">
+          <img src="https://via.placeholder.com/120x80" class="me-3 rounded" alt="Latest Post 2">
+          <div>
+            <h5 class="mb-1">
+              <a href="#" class="text-dark text-decoration-none">7 Best Fishing Games for PC on Windows (2024)</a>
+            </h5>
+            <p class="text-muted mb-0">Gaming | 10 April 2024</p>
+          </div>
+        </div>
+        <!-- Latest Post 3 -->
+        <div class="d-flex align-items-start mb-4">
+          <img src="https://via.placeholder.com/120x80" class="me-3 rounded" alt="Latest Post 3">
+          <div>
+            <h5 class="mb-1">
+              <a href="#" class="text-dark text-decoration-none">8 Top Free Online TV Apps for Android & iOS (2024)</a>
+            </h5>
+            <p class="text-muted mb-0">Android | 3 February 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-md-4">
+        <div class="mb-5">
+          <h4 class="mb-3">All Categories</h4>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">Android</a></li>
+            <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">Gaming</a></li>
+            <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">Tech Tips</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mb-3">Popular Posts</h4>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">How to Fix PUBG Mobile Lag (2024)</a></li>
+            <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">10 Best Offline Games Like Free Fire in 2024</a></li>
+            <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">Top Free AAA PC Games for Windows (2024)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About</h5>
+          <p>Short description about the blog.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">All Posts</a></li>
+            <li><a href="#" class="text-white">About</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p>Email: contact@blog.com</p>
+          <p>Phone: +123456789</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center">FreeTech - Built By <a href="#">Web-Tech-By-Dimeji</a></p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
